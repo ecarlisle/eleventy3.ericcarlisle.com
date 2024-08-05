@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+{% include "../_components/html-head.liquid" %}
+<body>
+	<div class="wrapper">
+	{% include "../_components/header.liquid" %}
+	<div class="main-aside">
+		<main>{{content}}</main>
+		{% include "../_components/aside.liquid" %}
+	</div>
+		{% include "../_components/footer.liquid" %}
+		{% include "../_components/svg-icons.liquid" %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<header class="global">
+	<nav class="global">
+		<a href="{{site.url}}">
+			<img
+				class="logo responsive"
+				src="/images/global/eric-carlisle-logo.svg"
+				alt="Eric Carlisle : UI, UX Engineer"
+				width="90"
+				height="32"
+			></a>
+		<ul>
+			{% assign navPages = collections.all | eleventyNavigation %}
+			{% for entry in navPages %}
+			<li>
+				<a {% if entry.url==page.url %} class="active"{% endif %}href="{{ entry.url }}">{{ entry.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

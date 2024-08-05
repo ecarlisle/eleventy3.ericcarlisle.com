@@ -1,0 +1,44 @@
+--- javascript
+{
+  date: new Date("2024-03-23T00:00:00Z"),
+  updated: new Date("2023-01-31T00:00:00Z"),
+  draft: false,
+  description: "Page Description",
+  images: [
+    {
+      src: "/images/posts/test1.png",
+      alt: "Image 1",
+    },
+    {
+    src: "/images/posts/test1.png",
+    alt: "Image 2",
+    },
+    {
+      src: "/images/posts/test1.png",
+      alt: "Image 3",
+    }
+  ],
+	layout: "main.liquid",
+	title: "Home",
+	eleventyNavigation: {
+		key: "Home",
+  	order: 1,
+	},
+  og_image: {
+    alt: "OG Image",
+    height: 630,
+    type: "image/jpeg",
+    url: "/images/og/1.jpg",
+    width: 1200,
+  },
+  title: "Home | EricCarlisle.com",
+  tags: [
+    "3d-printing",
+  ],
+}
+---
+<div class="intro">
+	Eric Carlisle is a Design-minded Web Engineer focusing in UI Architecture and UX Research.
+</div>
+
+<h2>Newest Posts</h2>

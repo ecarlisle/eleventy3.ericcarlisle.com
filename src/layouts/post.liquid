@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+{% include "../_components/html-head.liquid" %}
+<body>
+	{% include "../_components/header.liquid" %}
+	<div class="wrapper main-aside">
+		<main>
+			<h1>{{title}}</h1>
+			{% for image in images %}
+				{% if forloop.index == 1 %}
+					{% ArticleImage image.slug, image.alt %}
+				{% endif %}
+			{% endfor %}
+			{{content}}
+		</main>
+		{% include "../_components/aside.liquid" %}
+	</div>
+	{% include "../_components/footer.liquid" %}
+	{% include "../_components/svg-icons.liquid" %}
+	{% include "../_components/footer.liquid" %}
+</body>
+</html>

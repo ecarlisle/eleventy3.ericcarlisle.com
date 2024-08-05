@@ -1,0 +1,49 @@
+--- javascript
+{
+  date: new Date("2024-03-23T00:00:00Z"),
+  updated: new Date("2023-01-31T00:00:00Z"),
+  draft: false,
+  description: "Page Description",
+  images: [
+    {
+      src: "/images/posts/test1.png",
+      alt: "Image 1",
+    },
+    {
+    src: "/images/posts/test1.png",
+    alt: "Image 2",
+    },
+    {
+      src: "/images/posts/test1.png",
+      alt: "Image 3",
+    }
+  ],
+	layout: "main.liquid",
+	title: "About Me",
+	eleventyNavigation: {
+		key: "About Me",
+  	order: 2,
+	},
+  og_image: {
+    alt: "OG Image",
+    height: 630,
+    type: "image/jpeg",
+    url: "/images/og/1.jpg",
+    width: 1200,
+  },
+  tags: [
+    "3d-printing",
+  ],
+}
+---
+<h1 class="section">{{ title }}</h1>
+<p>I am a technologist, innovator, and educator. My strongest areas of expertise are:</p>
+
+<h2>UI Development</h2>
+<p>My strongest Web Engineering passion is in creating user interfaces that are useful, intuitive, and inclusive. My primary goal is to Keep It Simple to maximize code reuse and maintainability. Other focus areas include SEO, accessibility, and performance optimization.</p>
+
+<h2>UX Strategy</h2>
+<p>User Experience strategy affects all decisions I make with web production. I study the stakeholders involved in different experience paradigms, each usually having distinct, different goals. This insight empowers me to create experiences in which goals are aligned, resulting in all desired success factors.</p>
+
+<h2>Mentoring & Speaking</h2>
+<p>My passion to learn and innovate is coupled with the desire to empower and educate. I have had leadership positions that allowed me to mentor my colleagues and consult my clients. I also enjoy presenting at conferences and meetups, contributing to multiple subject matter expertise communities.</p>

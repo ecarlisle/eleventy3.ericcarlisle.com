@@ -1,0 +1,31 @@
+<aside>
+	<picture class="profile-image">
+		<source srcset="{{site.url}}/images/global/eric-carlisle_512.webp 2x, {{site.url}}/images/global/eric-carlisle_512.webp" type="image/webp">
+		<source srcset="{{site.url}}/images/global/eric-carlisle_512.avif 2x, {{site.url}}/images/global/eric-carlisle_512.avif" type="image/avif">
+		<img eleventy:ignore alt="Eric Carlisle" height="256" loading="lazy" srcset="{{site.url}}/images/global/eric-carlisle_512.jpg 2x, {{site.url}}/images/profile/eric-carlisle_512.jpg" type="image/jpeg" width="256">
+	</picture>
+
+	<!-- Social Icons -->
+	<nav class="social">
+		<ul>
+			{% for social in site.social %}
+			{% if social.url and social.name %}
+			<li>
+				<a href="{{social.url}}" aria-label="{{social.name}} Profile">
+					<svg width="24" height="24" class="social-icon" viewBox="0 0 32 32">
+						<use href="#icon-{{social.name | downcase}}"></use>
+					</svg>
+				</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+			<li>
+				<a href="/feed.xml" aria-label="RSS Feed">
+					<svg width="24" height="24" class="social-icon" viewBox="0 0 32 32">
+						<use href="#icon-rss"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</aside>

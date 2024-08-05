@@ -1,0 +1,48 @@
+{
+  "name": "2",
+  "version": "3.0.0",
+  "description": "Website for Eric Carlisle",
+  "main": "eleventy.config.js",
+  "type": "module",
+  "scripts": {
+    "build": "ENVIRONMENT=production npx tsx ./node_modules/@11ty/eleventy/cmd.cjs --config eleventy.config.ts",
+    "clean": "rm -rf dist",
+    "debug": "ENVIRONMENT=development DEBUG=Eleventy* npx tsx node_modules/@11ty/eleventy/cmd.cjs --config eleventy.config.ts --serve --incremental --watch",
+    "start": "npx tsx ./node_modules/@11ty/eleventy/cmd.cjs --config eleventy.config.ts --serve --incremental --watch"
+  },
+  "browserslist": [
+    "last 3 versions, not dead"
+  ],
+  "keywords": [],
+  "author": "Eric Carlisle",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "3.0.0-beta.1",
+    "@11ty/eleventy-dev-server": "^2.0.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@types/node": "^22.1.0",
+    "browserslist": "^4.23.2",
+    "date-fns": "^3.6.0",
+    "eslint": "^9.6.0",
+    "html-minifier-terser": "^7.2.0",
+    "jsx-async-runtime": "^0.5.0",
+    "lightningcss": "^1.25.1",
+    "markdown-it": "^14.1.0",
+    "node-ts": "^6.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4",
+    "utopia-core-scss": "^1.1.0"
+  },
+  "dependencies": {
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1"
+  }
+}
